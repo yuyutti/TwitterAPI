@@ -40,7 +40,7 @@ app.get("/api/v1/follower", (req, res)=> {
                 const follower = json.data.user.result.legacy.followers_count;
                 const following = json.data.user.result.legacy.friends_count
                 res.json({ 
-                    screenname: name,
+                    screen_name: name,
                     followerCount: follower,
                     following: following
                 });

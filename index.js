@@ -31,7 +31,7 @@ function follower_request() {
         },
         json: true
     };
-  
+
     request.post(postoptions, function(error, response, body) {
         const token = body.guest_token;
     
@@ -45,14 +45,12 @@ function follower_request() {
             },
             json: true
         };
-
-      
-  
-    request.get(getoptions, function(error, response, body) {
-        const follower = body.data.user.result.legacy.followers_count;
-        console.log(`follower count: ${follower}`);
+        
+        request.get(getoptions, function(error, response, body) {
+            const follower = body.data.user.result.legacy.followers_count;
+            console.log(`follower count: ${follower}`);
+        });
     });
-  });
 };
 
 function getTimeStamp() {

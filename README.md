@@ -8,7 +8,7 @@ TwitterAPIが有料となったためグレーゾーンですが、TwitterGlobal
 前提として、node.jsをインストール済みであることとします。
 1. ソースコードをcloneするなりしてローカル環境に落とし込んでください。
 2. ```npm i```でモジュールをインストールしてください。
-3. ```node index.js```でExoressサーバーを起動してください。
+3. ```node index.js```でExpressサーバーを起動してください。
 (webサーバーは3000Portで起動しています)
 
 ## APIの実行方法

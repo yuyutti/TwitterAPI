@@ -3,7 +3,7 @@ const app = express();
 const request = require('request');
 require('dotenv').config();
 
-const PORT = 3002
+const PORT = 3000
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
@@ -39,6 +39,7 @@ app.get("/api/v1/follower", (req, res)=> {
                 const name = json.data.user.result.legacy.screen_name
                 const follower = json.data.user.result.legacy.followers_count;
                 const following = json.data.user.result.legacy.friends_count
+                res.header('createAPI' , '@yuyuttiofficial')
                 res.json({ 
                     screen_name: name,
                     followerCount: follower,

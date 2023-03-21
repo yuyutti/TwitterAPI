@@ -34,3 +34,5 @@ APIKEYは.envファイルで変更可能です
 {int}・・・整数が表示されます
 
 返り値はjson形式で帰ってきます
+
+※envファイルに記載されてある「TWITTER_API_TOKEN」は「Authorization」の固定値なので公開して問題ない情報です
